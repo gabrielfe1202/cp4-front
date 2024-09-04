@@ -5,52 +5,12 @@
     --pane-padding: 5px 42px;
 }
 
-.quantidade-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .carrinho_menu{
     margin-right: 50px;
 }
 
-.quantidade-buttons button {
-    margin: 0 5px;
-    border: 0px solid #000;
-    background: var(--main-color);
-    width: 25px;
-    height: 25px;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.quantidade-buttons input {
-    width: 100px;
-    text-align: center;
-    border: 1px solid #909090;
-    margin: 0;
-}
-
 nav {
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     background: var(--main-color);
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
 }
 
 nav a {
@@ -141,14 +101,6 @@ h1 {
     opacity: 1;
 }
 
-.icones {
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-}
-
 footer {
     background: var(--main-color);
     padding: 20px 0px;
@@ -205,6 +157,9 @@ footer p {
 
 .produto .imagem {
     border-radius: 15px;
+    max-height: 200px;
+    width: auto !important;
+    max-width: 100%;
 }
 
 .produto .nome {
@@ -253,14 +208,6 @@ footer p {
     color: #fff;
 }
 
-#imagem_conteudo {
-    width: 50%;
-    border-radius: 15px;
-    color: #fff;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    float: left;
-}
 
 #imagem_produto {
     width: 100%;
@@ -268,10 +215,6 @@ footer p {
     color: #fff;
 }
 
-#texto_conteudo {
-    font-size: 18px;
-    color: #fff;
-}
 
 #desc_produto {
     font-size: 18px;
@@ -303,46 +246,10 @@ footer p {
     margin-left: 15px;
 }
 
-.quantidade input {
-    width: 10%;
-    padding: 3px 3px;
-    text-align: center;
-    border: 2px solid #fff;
-    background: transparent;
-    color: #fff;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.quantidade .menos,
-.quantidade .mais {
-    background: var(--main-color);
-    border: none;
-    padding: 3px 5px;
-    height: fit-content;
-    color: #fff;
-    border-radius: 3px;
-}
 
 .comprar {
     background: var(--main-color);
-    padding: 6px 35px;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 17px;
-    transition: 0.3s;
-    transition: all 1s;
-    transition-property: top;
-    display: inline-block;
-    border: none;
 }
-
-.titulo_quantidade {
-    font-weight: 600;
-    font-size: 19px;
-}
-
-
 
 .iconeLike {
     position: absolute;
@@ -361,6 +268,5 @@ footer p {
 }
 
 h3{
-    color: var(--main-color
-    );
+    color: var(--main-color);
 }
