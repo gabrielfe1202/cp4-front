@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+
+:root {
+    --main-color: #007a14;
+    --pane-padding: 5px 42px;
+}
+
+.quantidade-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrinho_menu{
+    margin-right: 50px;
+}
+
+.quantidade-buttons button {
+    margin: 0 5px;
+    border: 0px solid #000;
+    background: var(--main-color);
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantidade-buttons input {
+    width: 100px;
+    text-align: center;
+    border: 1px solid #909090;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-color);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.navbar .nav-item:last-child {
+    margin-right: 55px;
+}
+
+.banner {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+h1 {
+    font-family: 'Madimi One', sans-serif;
+    font-size: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.loja {
+    height: 333px;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.loja .texto {
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+}
+
+.loja .botao {
+    background: var(--main-color);
+    padding: 6px 35px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.3s;
+    display: none;
+    transition: all 1s;
+    top: 95%;
+    transition-property: top;
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+}
+
+.loja .botao:hover {
+    padding: 9px 40px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.loja:hover {
+    width: 115%;
+    margin-left: -7.5%;
+}
+
+.loja:hover .botao {
+    top: 90%;
+    opacity: 1;
+}
+
+.icones {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+footer {
+    background: var(--main-color);
+    padding: 20px 0px;
+}
+
+footer a,
+footer p {
+    color: #fff;
+    margin: 0;
+}
+
+.icone-rodape {
+    color: #fff;
+    font-size: 22px !important;
+    padding-right: 20px;
+}
+
+.produto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.produto:nth-child(odd) {
+    flex-direction: row;
+    background: #0B3954;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.produto:nth-child(even) {
+    flex-direction: row-reverse;
+    background: #087E8B;
+    text-align: right;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.produto:nth-child(even) .iconeLike,
+.produto:nth-child(even) .iconeLikeativo {
+    left: 15px !important;
+    right: auto !important;
+}
+
+.produto:nth-child(even) .nome {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    flex-direction: row-reverse;
+}
+
+.produto .nome span {
+    padding: 0px 10px;
+    color: #fff;
+}
+
+.produto .imagem {
+    border-radius: 15px;
+}
+
+.produto .nome {
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.produto .descricao {
+    font-size: 16px;
+    color: #fff;
+}
+
+.produto .preco {
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.produto .botao {
+    background: var(--main-color);
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.produto .botao:hover {
+    background: var(--main-color);
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+
+#titulo_produto {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+}
+
+#imagem_conteudo {
+    width: 50%;
+    border-radius: 15px;
+    color: #fff;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    float: left;
+}
+
+#imagem_produto {
+    width: 100%;
+    border-radius: 15px;
+    color: #fff;
+}
+
+#texto_conteudo {
+    font-size: 18px;
+    color: #fff;
+}
+
+#desc_produto {
+    font-size: 18px;
+    color: #fff;
+}
+
+#produto {
+    background: #0B3954;
+    padding: 40px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.produto .preco {
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+}
+
+#preco_produto {
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.quantidade {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.quantidade input {
+    width: 10%;
+    padding: 3px 3px;
+    text-align: center;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.quantidade .menos,
+.quantidade .mais {
+    background: var(--main-color);
+    border: none;
+    padding: 3px 5px;
+    height: fit-content;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.comprar {
+    background: var(--main-color);
+    padding: 6px 35px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.3s;
+    transition: all 1s;
+    transition-property: top;
+    display: inline-block;
+    border: none;
+}
+
+.titulo_quantidade {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+
+
+.iconeLike {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.iconeLikeativo {
+    color: var(--main-color);
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 25px;
+}
+
+h3{
+    color: var(--main-color
+    );
+}

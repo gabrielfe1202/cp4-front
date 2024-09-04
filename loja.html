@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CP4 - EcoTrend</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+  <meta property="og:tag" content="">
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Trabalho Vinheiria Agnelo" />
+  <meta property="og:description" content="Trabalho fiap WebDev" />
+  <meta property="og:site_name" content="Trabalho Vinheiria Agnelo" />
+  <meta property="og:image" content="http://gabriel.o2ew.com.br/img/logo-original.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="max-width: 75%;">
+          <img class="logo horizontal-logo" src="img/logo.png" alt="logo" style="max-height: 80px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="loja.html">Loja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div class="carrinho_menu">
+          <a href="carrinho.html">
+            <i class="fa fa-shopping-cart"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1 id="titulo_Loja">Loja</h1>
+  </section>
+
+  <section style="padding: 45px 0px;">
+    <div class="container" style="justify-content: center;display: flex;">
+      <aside class="col-md-2">
+        <h3><b>Categorias</b></h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+            <label class="form-check-label" for="firstCheckbox">Roupa</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+            <label class="form-check-label" for="secondCheckbox">Casa</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+            <label class="form-check-label" for="thirdCheckbox">Beleza</label>
+          </li>
+        </ul>
+        <h3><b>Preço</b></h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+            <label class="form-check-label" for="firstCheckbox">ate R$100</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+            <label class="form-check-label" for="secondCheckbox">ate R$250</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+            <label class="form-check-label" for="thirdCheckbox">ate R$500</label>
+          </li>
+        </ul>
+        <h3><b>Marca</b></h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+            <label class="form-check-label" for="firstCheckbox">RecliBrand</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+            <label class="form-check-label" for="secondCheckbox">SustBrand</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+            <label class="form-check-label" for="thirdCheckbox">verdeBrand</label>
+          </li>
+        </ul>
+      </aside>
+      <main class="col-md-10 row produtos" style="display: flex;justify-content: center;grid-gap: 20px;">
+
+        <div class="col-md-10 row produto">
+          <div class="col-md-4">
+            <img class="imagem" src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg" style="width: 100%" />
+          </div>
+          <div class="col-md-8">
+            <p class="nome">Conjunto de Panelas<span style="font-size: 13px;font-weight: normal;">Casa</span></p>
+            <a href="javascript: AdicionarFavoritos(1)" id="prod_1"><i class="fa fa-heart-o iconeLike" aria-hidden="true"></i></a>
+            <p class="descricao">Conjunto de panelas antiaderentes, 5 peças.</p>
+            <p class="preco">R$ 299,90</p>
+            <a class="botao" href="produto.html?cod=1">Ver mais</a>
+          </div>
+        </div>
+        
+        <div class="col-md-10 row produto">
+          <div class="col-md-4">
+            <img class="imagem" src="https://images.pexels.com/photos/276224/pexels-photo-276224.jpeg" style="width: 100%" />
+          </div>
+          <div class="col-md-8">
+            <p class="nome">Sofá 3 Lugares<span style="font-size: 13px;font-weight: normal;">Casa</span></p>
+            <a href="javascript: AdicionarFavoritos(2)" id="prod_2"><i class="fa fa-heart-o iconeLike" aria-hidden="true"></i></a>
+            <p class="descricao">Sofá confortável com revestimento em tecido macio.</p>
+            <p class="preco">R$ 1.200,00</p>
+            <a class="botao" href="produto.html?cod=2">Ver mais</a>
+          </div>
+        </div>
+        
+        <div class="col-md-10 row produto">
+          <div class="col-md-4">
+            <img class="imagem" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg" style="width: 100%" />
+          </div>
+          <div class="col-md-8">
+            <p class="nome">Lustre Moderno<span style="font-size: 13px;font-weight: normal;">Casa</span></p>
+            <a href="javascript: AdicionarFavoritos(3)" id="prod_3"><i class="fa fa-heart-o iconeLike" aria-hidden="true"></i></a>
+            <p class="descricao">Lustre moderno em vidro e metal para sala de jantar.</p>
+            <p class="preco">R$ 459,00</p>
+            <a class="botao" href="produto.html?cod=3">Ver mais</a>
+          </div>
+        </div>
+        
+        <div class="col-md-10 row produto">
+          <div class="col-md-4">
+            <img class="imagem" src="https://images.pexels.com/photos/273789/pexels-photo-273789.jpeg" style="width: 100%" />
+          </div>
+          <div class="col-md-8">
+            <p class="nome">Perfume Floral<span style="font-size: 13px;font-weight: normal;">Beleza</span></p>
+            <a href="javascript: AdicionarFavoritos(4)" id="prod_4"><i class="fa fa-heart-o iconeLike" aria-hidden="true"></i></a>
+            <p class="descricao">Fragrância floral suave e elegante.</p>
+            <p class="preco">R$ 189,90</p>
+            <a class="botao" href="produto.html?cod=4">Ver mais</a>
+          </div>
+        </div>
+        
+        <div class="col-md-10 row produto">
+          <div class="col-md-4">
+            <img class="imagem" src="https://images.pexels.com/photos/3373744/pexels-photo-3373744.jpeg" style="width: 100%" />
+          </div>
+          <div class="col-md-8">
+            <p class="nome">Kit Maquiagem Completo<span style="font-size: 13px;font-weight: normal;">Beleza</span></p>
+            <a href="javascript: AdicionarFavoritos(5)" id="prod_5"><i class="fa fa-heart-o iconeLike" aria-hidden="true"></i></a>
+            <p class="descricao">Kit de maquiagem com sombras, batons e acessórios.</p>
+            <p class="preco">R$ 249,90</p>
+            <a class="botao" href="produto.html?cod=5">Ver mais</a>
+          </div>
+        </div>
+        
+        <div class="col-md-10 row produto">
+          <div class="col-md-4">
+            <img class="imagem" src="https://images.pexels.com/photos/3373747/pexels-photo-3373747.jpeg" style="width: 100%" />
+          </div>
+          <div class="col-md-8">
+            <p class="nome">Creme Hidratante Corporal<span style="font-size: 13px;font-weight: normal;">Beleza</span></p>
+            <a href="javascript: AdicionarFavoritos(6)" id="prod_6"><i class="fa fa-heart-o iconeLike" aria-hidden="true"></i></a>
+            <p class="descricao">Creme hidratante com ação prolongada para todos os tipos de pele.</p>
+            <p class="preco">R$ 89,90</p>
+            <a class="botao" href="produto.html?cod=6">Ver mais</a>
+          </div>
+        </div>
+        
+        <div class="col-md-10 row produto">
+          <div class="col-md-4">
+            <img class="imagem" src="https://images.pexels.com/photos/1483153/pexels-photo-1483153.jpeg" style="width: 100%" />
+          </div>
+          <div class="col-md-8">
+            <p class="nome">Jaqueta de Couro<span style="font-size: 13px;font-weight: normal;">Roupas</span></p>
+            <a href="javascript: AdicionarFavoritos(7)" id="prod_7"><i class="fa fa-heart-o iconeLike" aria-hidden="true"></i></a>
+            <p class="descricao">Jaqueta de couro sintético para o inverno.</p>
+            <p class="preco">R$ 350,00</p>
+            <a class="botao" href="produto.html?cod=7">Ver mais</a>
+          </div>
+        </div>
+        
+        <div class="col-md-10 row produto">
+          <div class="col-md-4">
+            <img class="imagem" src="https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg" style="width: 100%" />
+          </div>
+          <div class="col-md-8">
+            <p class="nome">Vestido de Verão<span style="font-size: 13px;font-weight: normal;">Roupas</span></p>
+            <a href="javascript: AdicionarFavoritos(8)" id="prod_8"><i class="fa fa-heart-o iconeLike" aria-hidden="true"></i></a>
+            <p class="descricao">Vestido leve e solto, ideal para dias quentes.</p>
+            <p class="preco">R$ 199,90</p>
+            <a class="botao" href="produto.html?cod=8">Ver mais</a>
+          </div>
+        </div>
+        
+      
+
+      </main>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p>© Copyright 2024 Grupo 7. Todos os direitos reservados. <a href="#">Politica de privacidade</a></p>
+        </div>
+        <div class="col-md-4 icones">
+          <a href="#" target="_blank"><i class="fa fa-facebook icone-rodape"></i></a>
+          <a href="#" target="_blank"><i class="fa fa-whatsapp icone-rodape"></i></a>
+          <a href="#" target="_blank"><i class="fa fa-instagram icone-rodape"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script src="Scripts/pnotify/dist/pnotify.js"></script>
+  <script src="Scripts/pnotify/dist/pnotify.buttons.js"></script>
+  <script src="Scripts/pnotify/dist/pnotify.nonblock.js"></script>
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
